@@ -6,10 +6,16 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: "class",
-  theme: {},
-  plugins: [
-    require("@tailwindcss/typography")
-  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      gridTemplateColumns:  {
+        sidebar: "300px auto",
+        "sidebar-collapsed": "64px auto",
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/typography')],
 }
 export default config
+
