@@ -1,2 +1,2 @@
 # New-Weeks-Blog
-Weeks React Blog
+## The Weeks Agenda Next.Js Blog
