@@ -5,5 +5,5 @@ A simple blog, using NextJs along with Tailwind CSS, to discuss general pop cult
 
 * Main Page
 
-![150652.JPG](app/assets/Screenshot 2023-09-28 150652.jpg)
+![SCREENSHOT 2023-09-28 150652.JPG](app/assets/Screenshot 2023-09-28 150652.jpg)
 
