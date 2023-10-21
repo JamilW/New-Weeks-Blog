@@ -6,7 +6,4 @@ A simple blog, using NextJs along with Tailwind CSS, to discuss general pop cult
 * Main Page
 
 ![Screenshot 2023-09-28 150652](https://github.com/JamilW/New-Weeks-Blog/assets/43798753/092e2b12-d7bc-4d55-a201-cc2a5a7c8146)
-<<<<<<< HEAD
 
-=======
->>>>>>> 73dccfcc6af32751916fe514b6951db6c406cd8d
