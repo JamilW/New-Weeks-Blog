@@ -7,5 +7,15 @@ export interface Post   {
         current: string;
     };
     _createdAt: string;
+    
+    // orderings: [
+    //     {
+    //         title: "createdAt",
+    //         name: "createdAtAsc",
+    //         by: [{field: "createdAt", direction: "asc"}] 
+    //     }
+        
+    // ]
 }
+
 
