@@ -17,6 +17,7 @@ export default function Navbar() {
           <div>
             <SocialIcon className="mx-1 navbar-center display-iniine-block float-right clear-left" url="https://www.instagram.com/weeksagenda" style={{ height: 30, width: 30 }} />
             <SocialIcon className="mx-1 navbar-center" url="https://twitter.com/WeeksAgendaBlog" style={{ height: 30, width: 30 }} />
+            {/* <SocialIcon className="mx-1 navbar-center" url="https://www.threads.net/@weeksagendag" style={{ height: 30, width: 30 }} /> */}
           
           </div>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import RootLayout from "./layout";
 
 async function getData() {
-  const query = `*[_type == 'post']`;
+  const query = `*[_type == 'post'] | order(_createdAt desc)`;
 
   const data = await client.fetch(query);
 
