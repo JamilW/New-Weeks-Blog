@@ -13,6 +13,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "traceResolution": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -25,6 +26,9 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@types/*": [
+        "./*"
       ]
     },
     "forceConsistentCasingInFileNames": true
@@ -34,7 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/components/Comments.ts", "app/components/Comments.js", "app/components/Comments.js"  ],
   "exclude": [
     "node_modules"
   ]

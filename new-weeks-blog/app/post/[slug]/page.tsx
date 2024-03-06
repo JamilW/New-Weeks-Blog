@@ -3,6 +3,15 @@ import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+// import Comments from "@/app/components/Comments";
+import { url } from "inspector";
+import { any } from "prop-types";
+import DisqusComments from "@/app/components/Comments"
+import { DiscussionEmbed } from "disqus-react/";
+// import { DiscussionEmbed } from "disqus-react";
+// import DisqusComments, {DisqusCommentBlock} from "@/app/components/Comments";
+import { config } from "process";
+// import './globals.css'
 
 async function getData(slug: string) {
   const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
@@ -14,11 +23,21 @@ async function getData(slug: string) {
 
 export const revalidate = 60
 
+// // const redis = new Redis({
+
+// //   url: 'https://selected-bedbug-45948.upstash.io',
+
+// //   token: "AbN8ASQgZjM4ZWUzZjctOGU0ZC00ZGM2LWJjYjQtYTViZDZjMWU3ODY4Njc3Y2IzMTVkM2I5NDFhNDkwM2NkNjNhYmQ3Yzg1NDE=",
+
+// })
+
 export default async function SlugPage({
   params,
 }: {
   params: { slug: string };
 }) {
+  ;
+
   const data = (await getData(params.slug)) as Post;
 
   const PortableTextComponent = {
@@ -34,6 +53,8 @@ export default async function SlugPage({
       ),
     },
   };
+
+  // const member = await redis.srandmember<string>("nextjs13")
 
   return (
     <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
@@ -64,7 +85,11 @@ export default async function SlugPage({
             />
           </div>
         </div>
+        <div id="disqus-wrapper">
+     <DisqusComments />
+   </div>
       </div>
+     
     </div>
-  );
+  )
 }

@@ -2,6 +2,9 @@ import { client } from "./lib/sanity";
 import { Post } from "./lib/interface";
 import Link from "next/link";
 import RootLayout from "./layout";
+// import { Redis } from '@upstash/redis';
+// import styles from './page.module.css';
+
 
 async function getData() {
   const query = `*[_type == 'post'] | order(_createdAt desc)`;
@@ -21,7 +24,16 @@ export default async function IndexPage() {
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
           All Posts
-        </h1>  
+        </h1>
+      
+        {/* <Link className=" display-inline-block float-right" href="/" >
+          <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+            <h1 className=" text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              About Me
+            </h1>
+
+          </div>
+        </ Link> */}
       </div>
 
       <ul>
@@ -55,4 +67,6 @@ export default async function IndexPage() {
       </ul>
     </div>
   )
+
 }
+
