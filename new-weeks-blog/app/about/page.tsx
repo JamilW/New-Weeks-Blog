@@ -27,14 +27,14 @@ export default function about() {
               alt=''
             />
             <p>
-              Welcome to everyone who has landed here. As a kid growing up in a small town, the way I escaped my mundane surroundings was through film and music. My love for cinema and hip-hop culture has been very important to me in life. I would immerse myself in watching a captivating movie or by listening to a song or album that grabbed my eardrums. On my life's journey, I would form bonds with people who shared my enthusiasm in the entertainment arts. This love for the arts would shape me into the man I am today in terms of fashion, slang, and the company I keep.
+              Welcome to everyone who has found their way to my blog website. As a kid growing up in a small town, the way I escaped my mundane surroundings was through film and music. My love for cinema and hip-hop culture has been very important to me in life. I would immerse myself in watching a captivating movie or by listening to a song or album that grabbed my eardrums. On my life&apos;s journey, I would form bonds with people who shared my enthusiasm in the entertainment arts. This love for the arts would shape me into the man I am today in terms of fashion, slang, and the company I keep.
               
             </p>  
             <p>
-              As someone who also enjoys writing, it made sense to create a blog that would be a haven to attract like-minded individuals who share this love for movies and film. The Weeks Agenda is for the cinephiles and hip-hop enthusiasts of the world, as well as the casual fans. I want to build a community where we can respectfully exchange discourse over our love/hate for the latest movies and music. This blog is for the people who still enjoy the experience of going to a movie opening night with a tub of buttered popcorn and soft drink to wash it down. For the people who grew up on Yo! MTV Raps and Rap City. For the people who lose their minds over the latest movie trailers. For the people who debate top 10 rappers/albums lists.   
+              As someone who also enjoys writing, it made sense to create a blog that would be a haven for like-minded individuals who share this love for movies and film. The Weeks Agenda is for the cinephiles and hip-hop enthusiasts of the world, as well as for the casual fans. I want to build a community where we can respectfully exchange discourse over our love/hate for the latest movies and music. This blog is for the people who still enjoy the experience of going to a movie opening night with a tub of buttered popcorn and soft drink to wash it down. For the people who grew up on Yo! MTV Raps and Rap City. For the people who lose their minds over the latest movie trailers. For the people who debate top 10 rappers/albums lists.   
             </p>
             <p>
-              Rather it's film or hip-hop culture, Weeks Agenda is your one-stop shop for entertainment where I offer my personal spin on all things pop culture.  Let's connect, politic ditto...
+              Rather it&apos;s film or hip-hop culture, Weeks Agenda is your one-stop shop for entertainment where I offer my personal spin on all things pop culture.  Let&apos;s connect, politic ditto...
             </p>  
           </div>
         </div>
