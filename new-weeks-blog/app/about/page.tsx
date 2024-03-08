@@ -3,19 +3,6 @@ import { PortableText } from '@portabletext/react';
 import Image from "next/image";
 
 export default function about() {
-    // const PortableTextComponent = {
-    //   types: {
-    //     image: ({ value }: { value: any }) => (
-    //       <Image
-    //         src="./app/assets/headshot.jpg"
-    //         alt="Image"
-    //         className="rounded-lg"
-    //         width={800}
-    //         height={800}
-    //       />
-    //     ),
-    //   },
-    // };s
 
   return (
 
@@ -37,6 +24,7 @@ export default function about() {
               src="https://i.postimg.cc/1R2DN2k5/10995827-10202518527803409-4429824122052753281-n-1.jpg"
               width={800}
               height={400}
+              alt=''
             />
             <p>
               Welcome to everyone who has landed here. As a kid growing up in a small town, the way I escaped my mundane surroundings was through film and music. My love for cinema and hip-hop culture has been very important to me in life. I would immerse myself in watching a captivating movie or by listening to a song or album that grabbed my eardrums. On my life's journey, I would form bonds with people who shared my enthusiasm in the entertainment arts. This love for the arts would shape me into the man I am today in terms of fashion, slang, and the company I keep.
