@@ -5,7 +5,6 @@ import RootLayout from "./layout";
 // import { Redis } from '@upstash/redis';
 // import styles from './page.module.css';
 
-
 async function getData() {
   const query = `*[_type == 'post'] | order(_createdAt desc)`;
 
