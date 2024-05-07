@@ -2,6 +2,7 @@ import { client } from "./lib/sanity";
 import { Post } from "./lib/interface";
 import Link from "next/link";
 import RootLayout from "./layout";
+import Menu from "./components/Menu";
 // import { Redis } from '@upstash/redis';
 // import styles from './page.module.css';
 
@@ -18,9 +19,9 @@ export const revalidate = 60
 export default async function IndexPage() {
   RootLayout
   const data = (await getData()) as Post[];
-  return    (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700 pt-6">
-      <div className="space-y-2 md:space-y-5 pb-8">
+  return    ( 
+    <div className="divide-y divide-gray-200 dark:divide-gray-700 pt-6 justify-between display-inline block">
+      {/* <div className="space-y-2 md:space-y-5 pb-8">
          <ul className="md: flex justify-between lg: gap-x-44 xs: gap-x-32 sm: flex items-center"> 
           <li>
             <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -37,6 +38,9 @@ export default async function IndexPage() {
             </ Link>
           </li>
         </ul>
+      </div> */}
+      <div className="text-center mb-8 text-3xl">
+      <Menu />
       </div>
 
       <ul>

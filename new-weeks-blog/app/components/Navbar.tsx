@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Themebutton from "./ThemeButton";
 import { SocialIcon } from 'react-social-icons'
+import Menu from '../components/Menu'
+
 
 export default function Navbar() {
   return (
@@ -16,9 +18,11 @@ export default function Navbar() {
 
           <div>
             <SocialIcon className="mx-1 navbar-center display-iniine-block float-right clear-left" url="https://www.instagram.com/weeksagenda" style={{ height: 30, width: 30 }} />
-            <SocialIcon className="mx-1 navbar-center" url="https://twitter.com/WeeksAgendaBlog" style={{ height: 30, width: 30 }} />
+            <SocialIcon className="mx-1 navbar-center" url="https://x.com/WeeksAgendaBlog" style={{ height: 30, width: 30 }} />
+            {/* <SocialIcon className="mx-1 navbar-center" url="https://www.threads.net/weeksagenda" style={{ height: 30, width: 30 }} /> */}
           </div>
 
+          {/* <Menu /> */}
           <Themebutton />
         </div>
       </div>
