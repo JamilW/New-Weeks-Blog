@@ -22,7 +22,7 @@ export default function movies() {
         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
           <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">
             <p>
-              MOVIES BLOG ARCHIVE COMING SOON...
+              MOVIE BLOG ARCHIVE COMING SOON...
             </p>
             <img
               src="https://i.postimg.cc/bYBGXWLS/s-l1200.webp"
