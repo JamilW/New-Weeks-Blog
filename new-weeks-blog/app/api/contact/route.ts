@@ -89,7 +89,7 @@ export async function POST( req: NextApiRequest, res: NextApiResponse ) {
         `
     }
     console.log(msg)
-    await sgMail.send
+    await sgMail.send(res)
     return NextResponse.json({ success: true })
     }
 
