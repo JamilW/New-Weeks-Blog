@@ -73,6 +73,7 @@ export default function ContactForm() {
     });
 
     const {name, email, message} = values;
+    console.log(name.value)
 
     const handleChange = (e)    => 
         setValues({ ...values, [e.target.name]: e.target.value });
@@ -81,16 +82,21 @@ export default function ContactForm() {
             e.preventDefault();
         // const formData = new FormData(event.target)
         try {
-            await fetch('/api/contact/', {
-            // const response = await fetch('/api/contact', {
+            const res = await fetch('/api/contact', {
+                body: JSON.stringify(values),
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
                 },
                 // mode: 'no-cors',
-                body: JSON.stringify(values),
+                
                 // body: formData,
             });
+            const { error } = await res.json();
+            if (error)  {
+                console.log(err)
+                return
+            }
 
             // if (!response.ok) {
             //     console.log("falling over")
@@ -119,7 +125,7 @@ export default function ContactForm() {
                 </div>
             </div>
         </div>
-                <form method="post" action="/api/contact" onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
+                <form method="post" action="/api/contact/route" onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
                     <div className="mb-4 flex flex-col w-500">
 
                         <label htmlFor="form-name">Name </label>
