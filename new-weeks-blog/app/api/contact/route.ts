@@ -83,7 +83,7 @@ export async function POST( req: NextRequest) {
     // const handler = NextAuth({
     const {name, email, message} = req.body as any
     const body = await req.json();
-    console.log(name)
+    console.log(body.name)
     const msg = {
         to: NEXT_PUBLIC_TO_EMAIL,
         from: NEXT_PUBLIC_FROM_EMAIL,
