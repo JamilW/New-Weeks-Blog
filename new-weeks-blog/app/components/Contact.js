@@ -82,7 +82,8 @@ export default function ContactForm() {
             e.preventDefault();
         // const formData = new FormData(event.target)
         try {
-            const res = await fetch('/api/contact', {
+            const apiUrl = process.env.NEXT_PUBLIC_API_KEY
+            const res = await fetch('${apiUrl}/api/contact', {
                 body: JSON.stringify(values),
                 method: 'POST',
                 headers: {
