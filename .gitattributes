@@ -1,3 +1,4 @@
 *.ts[[:space:]].js[[:space:]].jsx[[:space:]].tsx[[:space:]].pack filter=lfs diff=lfs merge=lfs -text
 *pack filter=lfs diff=lfs merge=lfs -text
 *.pack filter=lfs diff=lfs merge=lfs -text
+*.node filter=lfs diff=lfs merge=lfs -text
