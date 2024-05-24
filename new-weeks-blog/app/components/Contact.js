@@ -66,33 +66,33 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-//     const [values, setValues] = useState({
-//         name: "",
-//         email: "",
-//         message: "",
-//     });
+    const [values, setValues] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
 
-//     const {name, email, message} = values;
-//     console.log(name.values)
+    const {name, email, message} = values;
+    console.log(values.name)
 
-//     const handleChange = (e)    => 
-//         setValues({ ...values, [e.target.name]: e.target.value });
+    const handleChange = (e)    => 
+        setValues({ ...values, [e.target.name]: e.target.value });
 
-//         const handleSubmit = async (e) => {
-//             e.preventDefault();
+        const handleSubmit = async (e) => {
+            e.preventDefault();
 //         // const formData = new FormData(event.target)
-//         try {
+        try {
 //             // const apiUrl = process.env.NEXT_PUBLIC_API_KEY
 //             // const res = await fetch('$(apiUrl)/api/contact', {
-//             const res = await fetch('/api/contact', {
-//                 method: 'POST',
-//                 headers: {
-//                     "Content-Type": "application/json",
-//                 },
-//                 body: JSON.stringify(values),
-//                 mode: 'no-cors',
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values),
+                mode: 'no-cors',
                 
-//             })
+            })
 
 //             .then((res) => {
 //                 if (!res.ok) {
@@ -105,11 +105,11 @@ export default function ContactForm() {
 //                 // 					throw new Error(`HTTP error! Status: ${response.status}`)
 //                 // 				}
 //                 // 				return response.json()
-//             // const { error } = await res.json();
-//             if (error)  {
-//                 console.log(err)
-//                 return 
-//             }
+            const { err } = await res.json();
+            if (err)  {
+                console.log(err)
+                return 
+            }
 //             // // // if (!response.ok) {
 //             // // //     console.log("falling over")
 //             // // //     throw new Error(`response status: ${response.status}`);
@@ -117,14 +117,13 @@ export default function ContactForm() {
 //             // // // const responseData = await response.json();
 //             // // // console.log(responseData['message'])
     
-//             alert('Message successfully sent');
-//         } catch (err) {
+            alert('Message successfully sent');
+        } catch (err) {
             
-//         console.log(values)
-//             console.error(err);
-//             alert("Error, please try resubmitting the form");
-        
-//         };
+        console.log(values)
+            alert("Error, please try resubmitting the form");
+        }      
+    };
 
 	return (
         <main className="flex min-h-screen flex-col items-center">
@@ -137,17 +136,17 @@ export default function ContactForm() {
                 </div>
             </div>
         </div>
-                <form method="post" action="/api/contact"  className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
+                <form method="post" onSubmit={handleSubmit} action="/api/contact"  className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
                     <div className="mb-4 flex flex-col w-500">
 
                         <label htmlFor="form-name">Name </label>
-                        <input id="form-name" required placeholder="Enter your full name" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="name" maxLength={50} name="name"  type="text"/>
+                        <input id="form-name" value={name} onChange={handleChange} required placeholder="Enter your full name" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="name" maxLength={50} name="name"  type="text"/>
 
                         <label htmlFor="form-email"> Email:</label>
-                        <input id="form-email" required placeholder="Enter your email" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="email" maxLength={80} name="email" type="email" />
+                        <input id="form-email" value={email} onChange={handleChange} required placeholder="Enter your email" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="email" maxLength={80} name="email" type="email" />
                         
                         <label htmlFor="form-message"> Message: </label>
-                        <textarea id="form-message" required placeholder="Enter your message" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' name="message"   rows={5} />
+                        <textarea id="form-message" value={message} onChange={handleChange} required placeholder="Enter your message" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' name="message"   rows={5} />
 
                     </div>
                     <button className="mt-4 border-solid border-2 border-gray-900 dark:border-white rounded-md bg-teal-500 p-4 text-black dark:text-white" type="submit">Let's Connect, Politic, Ditto!</button>
