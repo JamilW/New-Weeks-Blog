@@ -1,6 +1,8 @@
 {
   "name": "blog-next-13",
   "version": "0.1.0",
+  "main": "index.js",
+  "typings": "index.ds.ts",
   "private": true,
   "scripts": {
     "dev": "next dev",
