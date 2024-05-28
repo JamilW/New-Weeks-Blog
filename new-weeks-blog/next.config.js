@@ -9,9 +9,9 @@ const nextConfig = {
         NEXT_PUBLIC_TO_EMAIL: "my-value",
         // NEXT_PUBLIC_API_URL: "my-value"
     },
-    // eslint: { 
-    //     ignoreDuringBuilds: true 
-    // }
+    // eslint: {
+    //     ignoreDuringBuilds: true,
+    //   },
 }
 
 module.exports = nextConfig
