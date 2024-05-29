@@ -25,19 +25,19 @@
       "static/chunks/main-app-195ba6468fb37653.js",
       "static/chunks/app/contact/page-6192fb6d5226aee3.js"
     ],
-    "/about/page": [
-      "static/chunks/webpack-04115f530201807f.js",
-      "static/chunks/bce60fc1-63e564c86ab78c84.js",
-      "static/chunks/769-1c5c2af2d8c7b591.js",
-      "static/chunks/main-app-195ba6468fb37653.js",
-      "static/chunks/app/about/page-5858be23b819d04a.js"
-    ],
     "/movies/page": [
       "static/chunks/webpack-04115f530201807f.js",
       "static/chunks/bce60fc1-63e564c86ab78c84.js",
       "static/chunks/769-1c5c2af2d8c7b591.js",
       "static/chunks/main-app-195ba6468fb37653.js",
       "static/chunks/app/movies/page-579b7c6dc4daf7ed.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-04115f530201807f.js",
+      "static/chunks/bce60fc1-63e564c86ab78c84.js",
+      "static/chunks/769-1c5c2af2d8c7b591.js",
+      "static/chunks/main-app-195ba6468fb37653.js",
+      "static/chunks/app/about/page-5858be23b819d04a.js"
     ],
     "/music/page": [
       "static/chunks/webpack-04115f530201807f.js",
