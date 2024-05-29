@@ -7,10 +7,10 @@ A simple blog, using NextJs along with Tailwind CSS, to discuss general pop cult
 
 ![Screenshot 2024-05-29 181627](./new-weeks-blog/assets/Screenshot%202024-05-29%20181627.png)
 
-    # Dark Mode
+Dark Mode
 
 ![Screenshot 2024-05-29 183257](./new-weeks-blog/assets/Screenshot%202024-05-29%20183257.png)
 
-    # Light Mode
+Light Mode
 
 
