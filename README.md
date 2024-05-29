@@ -5,5 +5,7 @@ A simple blog, using NextJs along with Tailwind CSS, to discuss general pop cult
 
 * Main Page
 
-![Screenshot 2024-05-29 181627]
+![Screenshot 2024-05-29 181627](./new-weeks-blog/assets/Screenshot%202024-05-29%20181627.png)
+
+
 
