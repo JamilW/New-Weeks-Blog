@@ -352,17 +352,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 17736:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 97844, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 90125, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 86249, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 61522, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 13100, 23))
-
-/***/ }),
-
 /***/ 86930:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -811,7 +800,7 @@ async function IndexPage() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [381,905,60,579,747,545], () => (__webpack_exec__(18249)));
+var __webpack_exports__ = __webpack_require__.X(0, [381,905,60,579,747,423], () => (__webpack_exec__(18249)));
 module.exports = __webpack_exports__;
 
 })();

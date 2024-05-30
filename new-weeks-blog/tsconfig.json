@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "composite": true,
-    "declarationMap": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -13,7 +11,7 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "es6",
     "moduleResolution": "bundler",
     "traceResolution": true,
     "resolveJsonModule": true,
@@ -40,7 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "app/components/Comments.ts", "app/components/Comments.js", "app/components/Comments.js"  ],
+, "app/components/Comments.ts", "app/components/Comments.js", "app/components/Comments.js", "app/components/Contact.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,9 +2,9 @@
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
   "/contact/page": "/contact",
-  "/movies/page": "/movies",
   "/about/page": "/about",
   "/music/page": "/music",
+  "/movies/page": "/movies",
   "/api/contact/route": "/api/contact",
   "/post/[slug]/page": "/post/[slug]"
 }
