@@ -11,7 +11,7 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "bundler",
     "traceResolution": true,
     "resolveJsonModule": true,
@@ -37,8 +37,12 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "app/components/Comments.ts", "app/components/Comments.js", "app/components/Comments.js", "app/components/Contact.jsx"  ],
+    ".next/types/**/*.ts",
+    "app/components/Comments.ts",
+    "app/components/Comments.js",
+    "app/components/Comments.js",
+    "app/components/Contact.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
