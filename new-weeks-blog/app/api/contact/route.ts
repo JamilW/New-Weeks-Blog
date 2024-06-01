@@ -88,8 +88,7 @@ export async function POST( req: NextRequest) {
     const msg = {
         to: NEXT_PUBLIC_TO_EMAIL,
         from: NEXT_PUBLIC_FROM_EMAIL,
-        subject: `General response
-         from ${NEXT_PUBLIC_FROM_EMAIL}`,
+        subject: `General response from ${NEXT_PUBLIC_FROM_EMAIL}`,
         html: `<p><strong>Name: </strong> ${body.name}</p>
         <p><strong>Email: </strong> ${body.email}</p>
         <p><strong>Message: </strong> ${body.message}</p>
