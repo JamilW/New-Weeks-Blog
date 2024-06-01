@@ -82,19 +82,21 @@ sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
 export async function POST( req: NextRequest) {
     // const handler = NextAuth({
     const {name, email, message} = req.body as any
-    const body = await req.json();
+    const body = await req.json()
+    console.log(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
     console.log(body.name)
     const msg = {
         to: NEXT_PUBLIC_TO_EMAIL,
         from: NEXT_PUBLIC_FROM_EMAIL,
-        subject: `Website activity from ${NEXT_PUBLIC_FROM_EMAIL}`,
+        subject: `General response
+         from ${NEXT_PUBLIC_FROM_EMAIL}`,
         html: `<p><strong>Name: </strong> ${body.name}</p>
         <p><strong>Email: </strong> ${body.email}</p>
         <p><strong>Message: </strong> ${body.message}</p>
         `
     }
     console.log(msg)
-    await sgMail.send(msg)
+    await sgMail.send(msg);
     return NextResponse.json({ success: true })
     }
 

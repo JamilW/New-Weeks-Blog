@@ -117,7 +117,6 @@ export default function ContactForm() {
 //             // // // const responseData = await response.json();
 //             // // // console.log(responseData['message'])
     
-            alert('Message successfully sent');
         } catch (err) {
             
         console.log(values)
