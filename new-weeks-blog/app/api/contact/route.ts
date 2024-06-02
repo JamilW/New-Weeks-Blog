@@ -88,7 +88,7 @@ export async function POST( req: NextRequest) {
     console.log(body.name)
     const msg = {
         to: NEXT_PUBLIC_TO_EMAIL,
-        from: NEXT_PUBLIC_FROM_EMAIL,
+        from: email,
         subject: `General response from ${body.email}`,
         html: `<p><strong>Name: </strong> ${body.name}</p>
         <p><strong>Email: </strong> ${body.email}</p>
@@ -97,6 +97,6 @@ export async function POST( req: NextRequest) {
     }
     console.log(msg)
     await sgMail.send(msg);
-    return NextResponse.json({ success: true })
+    return NextResponse.json({ status: 200, success: true })
     }
 
