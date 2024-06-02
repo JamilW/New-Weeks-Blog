@@ -79,7 +79,7 @@ sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
 //     return NextResponse.json
 // }
  
-export async function POST( req: NextRequest, res: NextResponse) {
+export async function POST( req: NextRequest) {
     // const handler = NextAuth({
     const {name, email, message} = req.body as any
     const body = await req.json()

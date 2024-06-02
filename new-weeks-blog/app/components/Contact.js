@@ -84,7 +84,7 @@ export default function ContactForm() {
         try {
 //             // const apiUrl = process.env.NEXT_PUBLIC_API_KEY
 //             // const res = await fetch('$(apiUrl)/api/contact', {
-            const res = await fetch('weeksagenda.com/api/contact', {
+            const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
