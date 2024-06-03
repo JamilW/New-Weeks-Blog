@@ -65,6 +65,7 @@
 
 // }
 // import { NextApiRequest, NextApiResponse } from 'next';
+import { ifError } from 'assert';
 import { NextRequest, NextResponse } from 'next/server';
 // import values from "../../components/Contact"
 
@@ -82,21 +83,25 @@ const {NEXT_PUBLIC_SENDGRID_API_KEY, NEXT_PUBLIC_FROM_EMAIL, NEXT_PUBLIC_TO_EMAI
 export async function POST( req: NextRequest) {
     sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
     // const handler = NextAuth({
-    const {name, email, message} = req.body as any
-    const body = await req.json()
+    const {name, email, message} = req.body as any 
+    const body = await req.json()  
     console.log(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
     console.log(body.name)
     const msg = {
         to: NEXT_PUBLIC_TO_EMAIL,
-        from: email,
+        from: NEXT_PUBLIC_FROM_EMAIL,
         subject: `General response from ${body.email}`,
         html: `<p><strong>Name: </strong> ${body.name}</p>
         <p><strong>Email: </strong> ${body.email}</p>
         <p><strong>Message: </strong> ${body.message}</p>
         `
     }
-    console.log(msg)
-    await sgMail.send(msg);
-    return NextResponse.json({ status: 200, success: true })
+    try {
+        console.log(msg)
+        await sgMail
+            .send(msg);
+        return NextResponse.json({ success: true })
+    }   catch (err)  {
+        throw err
     }
-
+};

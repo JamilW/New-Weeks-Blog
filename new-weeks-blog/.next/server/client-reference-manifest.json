@@ -56,14 +56,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/components/Contact.js": {
-      "*": {
-        "id": "(sc_client)/./app/components/Contact.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./app/components/Providers.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/Providers.tsx",
@@ -83,6 +75,14 @@
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/Contact.js": {
+      "*": {
+        "id": "(sc_client)/./app/components/Contact.js",
         "name": "*",
         "chunks": [],
         "async": false
@@ -251,14 +251,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Contact.js": {
-      "id": "(app-client)/./app/components/Contact.js",
-      "name": "*",
-      "chunks": [
-        "app/contact/page:static/chunks/app/contact/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Providers.tsx": {
       "id": "(app-client)/./app/components/Providers.tsx",
       "name": "*",
@@ -290,13 +282,17 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Contact.js": {
+      "id": "(app-client)/./app/components/Contact.js",
+      "name": "*",
+      "chunks": [
+        "app/contact/page:static/chunks/app/contact/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\contact\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\layout": {
       "modules": [
         "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\globals.css",
@@ -305,6 +301,10 @@
       "files": [
         "static/css/app/layout.css"
       ]
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\contact\\page": {
+      "modules": [],
+      "files": []
     }
   }
 }

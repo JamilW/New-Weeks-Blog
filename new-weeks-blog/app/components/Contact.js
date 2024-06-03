@@ -93,8 +93,11 @@ export default function ContactForm() {
                 mode: 'no-cors',
                 
             })
+            
 
-//             .then((res) => {
+
+           
+           //             .then((res) => {
 //                 if (!res.ok) {
 //                     throw new Error(`HTTP error! Status: ${res.status}`)
 //                 }
