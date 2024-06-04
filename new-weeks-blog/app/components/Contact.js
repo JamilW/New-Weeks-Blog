@@ -88,11 +88,14 @@ export default function ContactForm() {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
+                    // bearer: NEXT_PUBLIC_SENDGRID_API_KEY
                 },
                 body: JSON.stringify(values),
                 mode: 'no-cors',
                 
             })
+            
+
             
 
 

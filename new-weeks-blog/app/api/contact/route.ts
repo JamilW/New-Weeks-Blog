@@ -74,14 +74,13 @@ require('dotenv').config()
 const sgMail = require('@sendgrid/mail')
 
 const {NEXT_PUBLIC_SENDGRID_API_KEY, NEXT_PUBLIC_FROM_EMAIL, NEXT_PUBLIC_TO_EMAIL} = process.env
-
+sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
 
 // export async function GET( req: NextRequest ) {
 //     return NextResponse.json
 // }
  
 export async function POST( req: NextRequest) {
-    sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY)
     // const handler = NextAuth({
     const {name, email, message} = req.body as any 
     const body = await req.json()  
@@ -104,4 +103,5 @@ export async function POST( req: NextRequest) {
     }   catch (err)  {
         throw err
     }
+    
 };
