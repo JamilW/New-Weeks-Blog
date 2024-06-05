@@ -101,7 +101,8 @@ export async function POST( req: NextRequest) {
             .send(msg);
         return NextResponse.json({ success: true })
     }   catch (err)  {
-        throw err
+        console.log(err)
+        throw err 
     }
     
 };

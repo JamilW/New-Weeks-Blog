@@ -96,7 +96,7 @@ export default function ContactForm() {
             })
             
 
-            
+            alert("Message Sent")
 
 
            
