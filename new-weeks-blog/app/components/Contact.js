@@ -64,6 +64,7 @@
 // }
 
 import { useState } from "react";
+import { useRef } from "react";
 
 export default function ContactForm() {
     const [values, setValues] = useState({
@@ -84,6 +85,7 @@ export default function ContactForm() {
         try {
 //             // const apiUrl = process.env.NEXT_PUBLIC_API_KEY
 //             // const res = await fetch('$(apiUrl)/api/contact', {
+            // const ref = useRef<HTMLFormElement>(null);
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
@@ -95,7 +97,7 @@ export default function ContactForm() {
                 
             })
             
-
+         
             alert("Message Sent")
 
 
@@ -141,10 +143,10 @@ export default function ContactForm() {
                 </div>
             </div>
         </div>
-                <form method="post" onSubmit={handleSubmit} action="/api/contact"  className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
+                <form method="post"  onSubmit={handleSubmit} action="//api/contact" className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
                     <div className="mb-4 flex flex-col w-500">
 
-                        <label htmlFor="form-name">Name </label>
+                        <label htmlFor="form-name">Name: </label>
                         <input id="form-name" value={name} onChange={handleChange} required placeholder="Enter your full name" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="name" maxLength={50} name="name"  type="text"/>
 
                         <label htmlFor="form-email"> Email:</label>
