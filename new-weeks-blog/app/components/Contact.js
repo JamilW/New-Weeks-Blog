@@ -67,6 +67,8 @@ import { useState } from "react";
 import { useRef } from "react";
 
 export default function ContactForm() {
+    // const ref = useRef<HTMLFormElement>(null)
+    // const ref = useRef();
     const [values, setValues] = useState({
         name: "",
         email: "",
@@ -80,7 +82,16 @@ export default function ContactForm() {
         setValues({ ...values, [e.target.name]: e.target.value });
 
         const handleSubmit = async (e) => {
+            const clear_input_values = () => {
+                setValues({
+                  name: "",
+                  email: "",
+                  message: ""
+                });
+            }
             e.preventDefault();
+            clear_input_values("")
+
 //         // const formData = new FormData(event.target)
         try {
 //             // const apiUrl = process.env.NEXT_PUBLIC_API_KEY
@@ -97,7 +108,9 @@ export default function ContactForm() {
                 
             })
             
-         
+            // 
+            
+
             alert("Message Sent")
 
 
@@ -143,7 +156,12 @@ export default function ContactForm() {
                 </div>
             </div>
         </div>
-                <form method="post"  onSubmit={handleSubmit} action="//api/contact" className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white">
+                <form method="post" 
+                    // ref={ref}
+                    action="//api/contact"
+                    onSubmit={handleSubmit}  
+                    className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white"
+                    >
                     <div className="mb-4 flex flex-col w-500">
 
                         <label htmlFor="form-name">Name: </label>
@@ -156,7 +174,7 @@ export default function ContactForm() {
                         <textarea id="form-message" value={message} onChange={handleChange} required placeholder="Enter your message" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' name="message"   rows={5} />
 
                     </div>
-                    <button className="mt-4 border-solid border-2 border-gray-900 dark:border-white rounded-md bg-teal-500 p-4 text-black dark:text-white" type="submit">Let's Connect, Politic, Ditto!</button>
+                    <button onClick={handleChange} className="mt-4 border-solid border-2 border-gray-900 dark:border-white rounded-md bg-teal-500 p-4 text-black dark:text-white" type="submit">Let's Connect, Politic, Ditto!</button>
                 </form>
             </main>
     )
