@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import { useSearchParams } from 'next/navigation'
 import { PortableText } from '@portabletext/react';
 import Image from "next/image";
 
@@ -30,6 +31,7 @@ export default function movies() {
               height={400}
               alt=''
             />  
+
           </div>
         </div>
       </div>  
