@@ -7,7 +7,7 @@ import Menu from "./components/Menu";
 // import styles from './page.module.css';
 
 async function getData() {
-  const query = `*[_type == 'post'] | order(_createdAt desc)`;
+  const query = `*[_type == 'post' && _createdAt > '2024-04-01' ] | order(_createdAt desc)`;
 
   const data = await client.fetch(query);
 

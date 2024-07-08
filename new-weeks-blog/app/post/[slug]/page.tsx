@@ -84,7 +84,16 @@ export default async function SlugPage({
             />
           </div>
           </div>
-        <div id="disqus-wrapper">
+        <div id="disqus-wrapper"
+        
+        
+        
+        
+        
+        
+        
+        
+        >
           <DisqusComments />
         </div>
       </div>  

@@ -6,7 +6,7 @@ export interface Post   {
     slug:   {
         current: string;
     };
-    category: string;
+    // category: string;
     _createdAt: string;
     
     // orderings: [
