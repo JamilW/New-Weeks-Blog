@@ -36,6 +36,14 @@ export default async function movies() {
         </div>
       </header>
 
+      <img
+          src="https://i.postimg.cc/52RmhJMq/1140x655-hip-hop-banner.jpg"
+          alt="Image"
+          className="rounded-lg mt-8"
+          width={800}
+          height={800}
+        />
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700 pt-6 justify-between display-inline block">
         {/* <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
           <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg"> */}
