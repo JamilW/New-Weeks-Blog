@@ -37,7 +37,7 @@ export default async function movies() {
       </header>
 
       <img
-          src="https://i.postimg.cc/52RmhJMq/1140x655-hip-hop-banner.jpg"
+          src="https://i.postimg.cc/cJyYwMxg/IMG-7640.jpg"
           alt="Image"
           className="rounded-lg mt-8"
           width={800}

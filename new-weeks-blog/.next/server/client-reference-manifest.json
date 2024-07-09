@@ -56,14 +56,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/components/Menu.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/components/Menu.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./app/components/Providers.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/Providers.tsx",
@@ -115,6 +107,14 @@
     "(app-client)/./app/components/Contact.js": {
       "*": {
         "id": "(sc_client)/./app/components/Contact.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/Menu.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/Menu.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -283,19 +283,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Menu.tsx": {
-      "id": "(app-client)/./app/components/Menu.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Providers.tsx": {
       "id": "(app-client)/./app/components/Providers.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -303,7 +295,7 @@
       "id": "(app-client)/./app/components/ThemeButton.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -311,7 +303,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/music/page:static/chunks/app/music/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -319,7 +311,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/music/page:static/chunks/app/music/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -370,13 +362,17 @@
         "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Menu.tsx": {
+      "id": "(app-client)/./app/components/Menu.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\layout": {
       "modules": [
         "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\globals.css",
@@ -403,6 +399,10 @@
       "files": []
     },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
       "modules": [],
       "files": []
     }

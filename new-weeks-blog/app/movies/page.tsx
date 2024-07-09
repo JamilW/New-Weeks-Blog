@@ -37,7 +37,7 @@ export default async function movies() {
       </header>
 
       <img
-          src="https://i.postimg.cc/mDNCgfKn/visiting-the-cinema-in-vietnam-2.jpg"
+          src="https://i.postimg.cc/6qZTWqgs/film2.jpg"
           alt="Image"
           className="rounded-lg mt-8"
           width={800}
