@@ -80,6 +80,14 @@
         "async": false
       }
     },
+    "(app-client)/./app/components/Menu.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/Menu.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/Comments.js": {
       "*": {
         "id": "(sc_client)/./app/components/Comments.js",
@@ -107,14 +115,6 @@
     "(app-client)/./app/components/Contact.js": {
       "*": {
         "id": "(sc_client)/./app/components/Contact.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./app/components/Menu.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/components/Menu.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -303,12 +303,20 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/music/page:static/chunks/app/music/page.js"
       ],
       "async": false
     },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\node_modules\\next\\dist\\esm\\client\\link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/music/page:static/chunks/app/music/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Menu.tsx": {
+      "id": "(app-client)/./app/components/Menu.tsx",
       "name": "*",
       "chunks": [
         "app/page:static/chunks/app/page.js"
@@ -362,14 +370,6 @@
         "app/contact/page:static/chunks/app/contact/page.js"
       ],
       "async": false
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Menu.tsx": {
-      "id": "(app-client)/./app/components/Menu.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
@@ -386,6 +386,10 @@
       "modules": [],
       "files": []
     },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
+      "modules": [],
+      "files": []
+    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\post\\[slug]\\page": {
       "modules": [],
       "files": []
@@ -399,10 +403,6 @@
       "files": []
     },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
       "modules": [],
       "files": []
     }
