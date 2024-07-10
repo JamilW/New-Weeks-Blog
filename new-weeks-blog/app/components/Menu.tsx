@@ -135,10 +135,10 @@ export default function Menu () {
                     </svg>
                     Main Menu
                 </button>
-                    {isOpen && (
+                    {isOpen && ( 
                         <div className="lg:invisible z-10 divide-y divide-white-100 lg:dropdown-disable mx-auto mt-2 w-44">
-                            <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu" className='border-solid border-2 border-gray-900 dark:border-white pt-4 pb-4 rounded-lg shadow-lg pl-12 pr-12 absolute bg-teal-600 hover:bg-white-900 bg-teal-600 ring-1 ring-black ring-opacity-5'>
-                                <li className=' transition-all duration-700 ease-in-out'>
+                            <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style={{ transition: 'all 3s ease-in-out' }} className=' border-solid border-2 border-gray-900 dark:border-white pt-4 pb-4 rounded-lg shadow-lg pl-12 pr-12 absolute bg-teal-600 hover:bg-white-900 bg-teal-600 ring-1 ring-black ring-opacity-5'>
+                                <li>
                                     <div>
                                         <a
                                             href="/about"

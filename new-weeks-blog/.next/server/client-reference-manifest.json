@@ -111,14 +111,6 @@
         "chunks": [],
         "async": false
       }
-    },
-    "(app-client)/./app/components/Contact.js": {
-      "*": {
-        "id": "(sc_client)/./app/components/Contact.js",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -362,14 +354,6 @@
         "app/post/[slug]/page:static/chunks/app/post/[slug]/page.js"
       ],
       "async": false
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\components\\Contact.js": {
-      "id": "(app-client)/./app/components/Contact.js",
-      "name": "*",
-      "chunks": [
-        "app/contact/page:static/chunks/app/contact/page.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
@@ -382,11 +366,15 @@
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\movies\\page": {
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\movies\\page": {
       "modules": [],
       "files": []
     },
@@ -395,14 +383,6 @@
       "files": []
     },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\music\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\contact\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
       "modules": [],
       "files": []
     }
