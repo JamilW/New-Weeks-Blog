@@ -361,6 +361,14 @@
       "modules": [],
       "files": []
     },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\post\\[slug]\\page": {
+      "modules": [],
+      "files": []
+    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\layout": {
       "modules": [
         "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\globals.css",
@@ -369,10 +377,6 @@
       "files": [
         "static/css/app/layout.css"
       ]
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\post\\[slug]\\page": {
-      "modules": [],
-      "files": []
     }
   }
 }
