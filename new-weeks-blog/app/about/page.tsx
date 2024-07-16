@@ -25,6 +25,7 @@ export default function about() {
               width={800}
               height={400}
               alt=''
+              className='rounded-full aspect-square object-cover'
             />
             <p>
               Welcome to everyone who has found their way to my blog website. As a kid growing up in a small town, the way I escaped my mundane surroundings was through film and music. My love for cinema and hip-hop culture has been very important to me in life. I would immerse myself in watching a captivating movie or by listening to a song or album that grabbed my eardrums. On my life&apos;s journey, I would form bonds with people who shared my enthusiasm in the entertainment arts. This love for the arts would shape me into the man I am today in terms of fashion, slang, and the company I keep.

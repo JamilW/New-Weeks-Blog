@@ -295,7 +295,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/music/page:static/chunks/app/music/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -303,7 +303,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/music/page:static/chunks/app/music/page.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
@@ -366,23 +366,11 @@
         "static/css/app/layout.css"
       ]
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\movies\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\page": {
       "modules": [],
       "files": []
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\post\\[slug]\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\music\\page": {
       "modules": [],
       "files": []
     }

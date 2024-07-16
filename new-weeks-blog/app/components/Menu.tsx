@@ -116,9 +116,9 @@ export default function Menu () {
     return  (
     
         <div>
-            <div>
+            <div className='transition-all duration-300 ease-in-out' >
                 <button className='relative inline-flex p-3 rounded lg:hidden ml-auto outline-none font-bold rounded-lg inline-flex items-center text-center 'id="dropdownDefaultButton" data-dropdown-toggle="dropdown" type="button" onClick={toggleDropdown}>
-                    <svg
+                    <svg 
                         className='w-6 h-10 mr-2'
                         fill='none'
                         aria-hidden="true"
@@ -136,8 +136,8 @@ export default function Menu () {
                     Main Menu
                 </button>
                     {isOpen && ( 
-                        <div className="lg:invisible z-10 divide-y divide-white-100 lg:dropdown-disable mx-auto mt-2 w-44">
-                            <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style={{ transition: 'all 3s ease-in-out' }} className=' border-solid border-2 border-gray-900 dark:border-white pt-4 pb-4 rounded-lg shadow-lg pl-12 pr-12 absolute bg-teal-600 hover:bg-white-900 bg-teal-600 ring-1 ring-black ring-opacity-5'>
+                        <div className="lg:invisible z-10 divide-y divide-white-100 lg:dropdown-disable mx-auto mt-2 w-44 ring-1 ring-black ring-opacity-5" style={{ transition: 'all 3s ease-in-out' }} >
+                            <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu" className='border-solid border-2 border-gray-900 dark:border-white pt-4 pb-4 rounded-lg shadow-lg pl-12 pr-12 absolute bg-teal-600 hover:bg-white-900 bg-teal-600 ring-1 ring-black ring-opacity-5'>
                                 <li>
                                     <div>
                                         <a
