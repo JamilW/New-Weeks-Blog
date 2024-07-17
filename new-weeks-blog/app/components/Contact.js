@@ -146,7 +146,7 @@ export default function ContactForm() {
     };
 
 	return (
-        <main className="flex min-h-screen flex-col items-center">
+        <main className="flex min-h-screen flex-col items-center divide-y divide-gray-200 dark:divide-gray-700">
             <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0">
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
                 <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">
