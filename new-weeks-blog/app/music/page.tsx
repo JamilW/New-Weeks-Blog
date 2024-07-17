@@ -25,7 +25,7 @@ export default async function movies() {
   
   return (
     
-    <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+    <div className="divide-y divide-gray-700 dark:divide-gray-700">
       <header className="pt-6 xl:pb-6">
         <div className="space-y-1 text-center">
           <div>
@@ -39,7 +39,7 @@ export default async function movies() {
       <img
           src="https://i.postimg.cc/cJyYwMxg/IMG-7640.jpg"
           alt="Image"
-          className="rounded-lg mt-8"
+          className="rounded-lg mt-8 pt-10"
           width={800}
           height={800}
         />

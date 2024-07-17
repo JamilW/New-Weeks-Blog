@@ -20,7 +20,7 @@ export default async function IndexPage() {
   RootLayout
   const data = (await getData()) as Post[];
   return    ( 
-    <div className="divide-y divide-gray-200 dark:divide-gray-700 pt-6 justify-between display-inline block">
+    <div className="divide-y divide-gray-700 dark:divide-gray-700 pt-6 justify-between display-inline block">
       {/* <div className="space-y-2 md:space-y-5 pb-8">
          <ul className="md: flex justify-between lg: gap-x-44 xs: gap-x-32 sm: flex items-center"> 
           <li>
@@ -45,7 +45,7 @@ export default async function IndexPage() {
 
       <ul>
       {data.map((post) => (
-        <li key={post._id} className="py-4">
+        <li key={post._id} className="py-4 divide-y divide-gray-700 dark:divide-gray-700">
           <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
             <div>
               <p className="text-base font-medium leading-6 text-teal-500">
