@@ -147,9 +147,9 @@ export default function ContactForm() {
 
 	return (
         <main className="flex min-h-screen flex-col items-center divide-y divide-gray-200 dark:divide-gray-700">
-            <div className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0">
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-                <div className="prose max-w-none pb-8 pt-10 dark:prose-invert prose-lg">
+            <div className="pb-7 xl:divide-y-0">
+            <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
+                <div className="prose max-w-none pb-0 pt-4 dark:prose-invert prose-lg">
                     <p>
                         For any general questions or inquiries, feel free to fill out and submit the following form to reach out to us. We are building a community here from the ground up and would love your feedback. Please be respectful in your discourse. I will respond by e-mail (weeksagenda@gmail.com) as soon as possible. Let's connect!
                     </p>    
@@ -160,9 +160,9 @@ export default function ContactForm() {
                     // ref={ref}
                     action="//api/contact"
                     onSubmit={handleSubmit}  
-                    className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white"
+                    className="mt-4 mb-2 w-80 max-w-screen-lg sm:w-96 dark:text-white"
                     >
-                    <div className="mb-4 flex flex-col w-500">
+                    <div className="mb-4 mt-6 flex flex-col w-500">
 
                         <label htmlFor="form-name">Name: </label>
                         <input id="form-name" value={name} onChange={handleChange} required placeholder="Enter your full name" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' autoComplete="name" maxLength={50} name="name"  type="text"/>
@@ -174,7 +174,7 @@ export default function ContactForm() {
                         <textarea id="form-message" value={message} onChange={handleChange} required placeholder="Enter your message" className='mb-4 dark:text-white border-solid border-2 border-gray-900 rounded-md bg-white-500 p-4 text-black' name="message"   rows={5} />
 
                     </div>
-                    <button onClick={handleChange} className="mt-4 border-solid border-2 border-gray-900 dark:border-white rounded-md bg-teal-500 p-4 text-black dark:text-white" type="submit">Let's Connect, Politic, Ditto!</button>
+                    <button onClick={handleChange} className="mt-8 border-solid border-2 border-gray-900 dark:border-white rounded-md bg-teal-500 p-4 text-black dark:text-white" type="submit">Let's Connect, Politic, Ditto!</button>
                 </form>
             </main>
     )

@@ -7,7 +7,7 @@ export default function about() {
   return (
 
     <div className="divide-y divide-gray-700 dark:divide-gray-700">
-      <header className="pt-6 pb-6">
+      <header className="pt-6 pb-2">
         <div className="space-y-1 text-center">
           <div>
             <h1 className="text-3xl mb-4 font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
@@ -25,7 +25,7 @@ export default function about() {
               width={800}
               height={400}
               alt=''
-              className='pt-4 rounded-lg aspect-square mb-6 object-cover'
+              className='pt-0 rounded-lg aspect-square mb-6 object-cover'
             />
             <p>
               Welcome to everyone who has found their way to my blog website. As a kid growing up in a small town, the way I escaped my mundane surroundings was through film and music. My love for cinema and hip-hop culture has been very important to me in life. I would immerse myself in watching a captivating movie or by listening to a song or album that grabbed my eardrums. On my life&apos;s journey, I would form bonds with people who shared my enthusiasm in the entertainment arts. This love for the arts would shape me into the man I am today in terms of fashion, slang, and the company I keep.

@@ -1252,6 +1252,9 @@ video {
 .mr-20 {
   margin-right: 5rem;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1554,6 +1557,12 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .text-left {
   text-align: left;

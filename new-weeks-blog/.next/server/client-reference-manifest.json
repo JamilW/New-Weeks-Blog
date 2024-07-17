@@ -381,10 +381,6 @@
       "modules": [],
       "files": []
     },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
-      "modules": [],
-      "files": []
-    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\layout": {
       "modules": [
         "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\globals.css",
@@ -394,15 +390,19 @@
         "static/css/app/layout.css"
       ]
     },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\about\\page": {
+      "modules": [],
+      "files": []
+    },
+    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\music\\page": {
+      "modules": [],
+      "files": []
+    },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\contact\\page": {
       "modules": [],
       "files": []
     },
     "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\post\\[slug]\\page": {
-      "modules": [],
-      "files": []
-    },
-    "C:\\Users\\jamil\\New-Weeks-Blog\\new-weeks-blog\\app\\music\\page": {
       "modules": [],
       "files": []
     }
