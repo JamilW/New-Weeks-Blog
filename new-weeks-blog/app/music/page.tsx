@@ -38,8 +38,8 @@ export default async function movies() {
 
       <img
           src="https://i.postimg.cc/cJyYwMxg/IMG-7640.jpg"
-          alt="Image"
-          className="rounded-lg mt-8 pt-10"
+          alt=""
+          className="rounded-lg mt-8 pt-10 object-cover"
           width={800}
           height={800}
         />
@@ -76,16 +76,14 @@ export default async function movies() {
                 </li>
               ) 
             )}
+            {/* <div className='flex flex-col items-center'>
+              <Link href='/' > 
+                <button className='p-6 bg-teal-500 rounded-lg border-solid border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white text-center'>
+                  2024-2023 Music Blog Archives
+                </button>
+              </Link>
+            </div> */}
             </ul>
-            {/* <p>
-              MOVIE BLOG ARCHIVE COMING SOON...
-            </p>
-            <img
-              src="https://i.postimg.cc/bYBGXWLS/s-l1200.webp"
-              width={800}
-              height={400}
-                alt=''
-            />   */}
 
           {/* </div>
         </div> */}
