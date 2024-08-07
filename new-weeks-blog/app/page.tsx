@@ -7,7 +7,7 @@ import Menu from "./components/Menu";
 // import styles from './page.module.css';
 
 async function getData() {
-  const query = `*[_type == 'post' && _createdAt > '2024-04-01' ] | order(_createdAt desc)`;
+  const query = `*[_type == 'post' && _createdAt > '2024-05-01' ] | order(_createdAt desc)`;
 
   const data = await client.fetch(query);
 
@@ -45,7 +45,7 @@ export default async function IndexPage() {
 
       <ul>
       {data.map((post) => (
-        <li key={post._id} className="py-4 divide-y divide-gray-700 dark:divide-gray-700">
+        <li key={post._id} className="py-4">
           <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
             <div>
               <p className="text-base font-medium leading-6 text-teal-500">
