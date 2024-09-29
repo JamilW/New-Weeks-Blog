@@ -8,7 +8,7 @@ import Image from "next/image";
 
 async function getData() {
   // const today = new Date().toISOString().split('T')[0];
-  const query = `*[_type == 'post' && _createdAt < '2024-05-01' && overview match "music"] | order(_createdAt desc)`;
+  const query = `*[_type == 'post' && _createdAt < '2024-06-01' && overview match "music"] | order(_createdAt desc)`;
 
   const data = await client.fetch(query);
   
